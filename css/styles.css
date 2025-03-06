@@ -1,0 +1,31 @@
+.nav-hover-custom {
+    position: relative;
+    display: inline-block; /* Ensures width is only as much as content */
+}
+
+.nav-hover-custom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-hover-custom:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.custom-h5-styling {
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: #f8d7da solid;
+    width: 55%;
+}
+    
+.main-custom-card-sizing{
+    margin: 10% 0;
+}

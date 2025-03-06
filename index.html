@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mates Dusek</title>
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matěj Dušek</title>
+  </head>
 
-    <body>
+  <body data-bs-theme="dark">
+    <header>
+      <div class="container-fluid bg-dark-subtle">
+        <nav class="navbar navbar-expand-lg justify-content-center bg-dark-subtle bg-dark " data-bs-toggle="navbar">
+        <ul class="navbar-nav">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>      
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <li class="nav-item"><a href="index.html" class="nav-link active text-danger opacity-50 nav-hover-custom">About me</a></li>
+            <li class="nav-item "><a href="projects.html" class="nav-link text-danger opacity-50 nav-hover-custom">Projects</a></li>
+            <li class="nav-item "><a href="#" class="nav-link text-danger opacity-50 nav-hover-custom">Contact me</a></li>
+          </div>
 
-    </body>
-</html>
+        </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="d-flex justify-content-center">
+      <div class="card border-danger-subtle border-3 main-custom-card-sizing" style="width: 18rem;" data-bs-theme="dark">
+        <div class="card-body">
+          <h5 class="card-title custom-h5-styling">Matěj Dušek</h5>
+            <p class="card-text ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Illum doloribus hic, atque quam adipisci, beatae tenetur incidunt consectetur,  
+            dolore modi velit mollitia eius iste doloremque vel debitis nihil temporibus! Quidem!</p>
+        </div>
+      </div>
+    </main>
+    <!-- To do
+    - Fix card not changing to white mode 
+    
+    -->
+
+    <button id="themeToggle" class="btn btn-primary">Toggle Dark Mode</button>
+
+    <script>
+      const toggleButton = document.getElementById("themeToggle");
+      const body = document.body;
+
+      toggleButton.addEventListener("click", function () {
+          if (body.getAttribute("data-bs-theme") === "dark") {
+              body.setAttribute("data-bs-theme", "light");
+          } else {
+              body.setAttribute("data-bs-theme", "dark");
+          }
+      });
+  </script>
+  </body>
+</html> 
