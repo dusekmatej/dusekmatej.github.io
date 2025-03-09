@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/queries.css"> -->
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -12,38 +14,44 @@
     <title>Matěj Dušek</title>
   </head>
 
-  <body data-bs-theme="dark">
+  <body data-bs-theme="dark"> 
+    <!-- Theme toggle button -->
+
     <header>
       <div class="container-fluid bg-dark-subtle">
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg justify-content-center bg-dark-subtle bg-dark " data-bs-toggle="navbar">
-        <ul class="navbar-nav">
-          
+        <ul class="navbar-nav">          
+          <!-- Button for responsive navigation-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>      
-          
+          </button>
+
+          <!-- Navigation items -->
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <li class="nav-item"><a href="index.html" class="nav-link active text-danger opacity-50 nav-hover-custom">About me</a></li>
-            <li class="nav-item "><a href="projects.html" class="nav-link text-danger opacity-50 nav-hover-custom">Projects</a></li>
-            <li class="nav-item "><a href="#" class="nav-link text-danger opacity-50 nav-hover-custom">Contact me</a></li>
+            <li class="nav-item"><a href="index.html"     class="nav-link text-danger-subtle-dark opacity-50 nav-hover-custom themeText" id="themeActiveUnderline">About me</a></li>
+            <li class="nav-item "><a href="projects.html" class="nav-link text-danger-subtle-dark opacity-50 nav-hover-custom themeText">Projects</a></li>
+            <li class="nav-item "><a href="#"             class="nav-link text-danger-subtle-dark opacity-50 nav-hover-custom themeText">Contact me</a></li>
           </div>
           
         </ul>
         </nav>
-        <div class="float-end"><button id="themeToggle" class="btn btn-primary">Toggle Dark Mode</button></div>
+        
       </div>
     </header>
 
-    <main class="d-flex justify-content-center">
+  <!-- Main body of the site  -->
 
-      <h1 id="themeText" class="text-danger-subtle-dark">Test Text</h1>
+    <main class="d-flex justify-content-center" style>
 
+      <!-- <h1 id="themeText" class="text-danger-subtle-dark" style="position: relative; top: 75px">Test Text</h1> -->
 
-      <div class="card border-danger-subtle border-3 main-custom-card-sizing" style="width: 28rem;">
+      <!-- About me card-->
+      <div class="card border-danger-subtle border-3 main-custom-card-sizing">
         <div class="card-body">
-          <h5 class="card-title custom-h5-styling">Lorem Ipsum</h5>
+          <h5 id="h5-underline-theme" class="card-title custom-h5-styling h5-underline-danger-subtle-dark">Matěj Dušek</h5>
+          <i id="themeToggle" class="fa-solid fa-moon icon-resize float-end clearfix"></i>
             <p class="card-text">
-              <img src="fontawesome-free-6.7.2-web/svgs/brands/42-group.svg" alt="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Illum doloribus hic, atque quam adipisci, beatae tenetur incidunt consectetur,  
             dolore modi velit mollitia eius iste doloremque vel debitis nihil temporibus! Quidem!
@@ -53,11 +61,6 @@
         </div>
       </div>
     </main>
-    <!-- To do
-    - Fix card not changing to white mode 
-    
-    -->
 
-    
   </body>
-</html> 
+</html>

@@ -1,3 +1,4 @@
+/* Navigation hover effect */
 .nav-hover-custom {
     position: relative;
     display: inline-block; /* Ensures width is only as much as content */
@@ -19,20 +20,58 @@
     left: 0;
 }
 
+/* Custom name tag styling */
 .custom-h5-styling {
+    display: inline-block;
     font-size: 24px;
+    padding: 0px 7px;
     font-weight: 600;
-    border-bottom: #f8d7da solid;
-    width: 35%;
-}
-    
-.main-custom-card-sizing{
-    margin: 10% 0;
 }
 
+/* Custom "about me" card sizing */
+.main-custom-card-sizing{
+    margin: 10% 0;
+    max-width: 70%  !important;
+    /* width: 28rem !important; */
+}
+
+/* Dark / Light mode styling */
+
 .text-danger-subtle-light {
-    color:#b00020 !important;
+    color:#d32f2f !important;
 }
+
 .text-danger-subtle-dark {
-    color: #ffccd5 !important;
+    color: #b00020 !important;
 }
+
+
+
+.h5-underline-danger-subtle-dark {
+    border-bottom: 2px solid #b00020;
+}
+
+.h5-underline-danger-subtle-light {
+    border-bottom: 2px solid #d32f2f;
+}
+
+
+.active-dark {
+    border-bottom: 2px solid #b00020;
+}
+
+.active-light {
+    border-bottom: 2px solid #d32f2f;
+}
+
+/* Theme toggle styling */
+
+#themeToggle {
+    cursor: pointer;
+}
+
+/* Icon resizing */
+.icon-resize {
+    font-size: 32px;
+}
+
