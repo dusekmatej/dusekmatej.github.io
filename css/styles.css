@@ -23,9 +23,16 @@
     font-size: 24px;
     font-weight: 600;
     border-bottom: #f8d7da solid;
-    width: 55%;
+    width: 35%;
 }
     
 .main-custom-card-sizing{
     margin: 10% 0;
+}
+
+.text-danger-subtle-light {
+    color:#b00020 !important;
+}
+.text-danger-subtle-dark {
+    color: #ffccd5 !important;
 }

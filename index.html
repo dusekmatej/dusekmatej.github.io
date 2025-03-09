@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
+    <script src="js/scripts.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <meta charset="UTF-8" />
@@ -26,17 +27,26 @@
             <li class="nav-item "><a href="projects.html" class="nav-link text-danger opacity-50 nav-hover-custom">Projects</a></li>
             <li class="nav-item "><a href="#" class="nav-link text-danger opacity-50 nav-hover-custom">Contact me</a></li>
           </div>
-
+          
         </ul>
         </nav>
+        <div class="float-end"><button id="themeToggle" class="btn btn-primary">Toggle Dark Mode</button></div>
       </div>
     </header>
 
     <main class="d-flex justify-content-center">
-      <div class="card border-danger-subtle border-3 main-custom-card-sizing" style="width: 18rem;" data-bs-theme="dark">
+
+      <h1 id="themeText" class="text-danger-subtle-dark">Test Text</h1>
+
+
+      <div class="card border-danger-subtle border-3 main-custom-card-sizing" style="width: 28rem;">
         <div class="card-body">
-          <h5 class="card-title custom-h5-styling">Matěj Dušek</h5>
-            <p class="card-text ">
+          <h5 class="card-title custom-h5-styling">Lorem Ipsum</h5>
+            <p class="card-text">
+              <img src="fontawesome-free-6.7.2-web/svgs/brands/42-group.svg" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Illum doloribus hic, atque quam adipisci, beatae tenetur incidunt consectetur,  
+            dolore modi velit mollitia eius iste doloremque vel debitis nihil temporibus! Quidem!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Illum doloribus hic, atque quam adipisci, beatae tenetur incidunt consectetur,  
             dolore modi velit mollitia eius iste doloremque vel debitis nihil temporibus! Quidem!</p>
@@ -48,19 +58,6 @@
     
     -->
 
-    <button id="themeToggle" class="btn btn-primary">Toggle Dark Mode</button>
-
-    <script>
-      const toggleButton = document.getElementById("themeToggle");
-      const body = document.body;
-
-      toggleButton.addEventListener("click", function () {
-          if (body.getAttribute("data-bs-theme") === "dark") {
-              body.setAttribute("data-bs-theme", "light");
-          } else {
-              body.setAttribute("data-bs-theme", "dark");
-          }
-      });
-  </script>
+    
   </body>
 </html> 
