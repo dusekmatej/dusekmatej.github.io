@@ -1,4 +1,67 @@
-/* Navigation hover effect */
+/* Custom "about me" card sizing */
+.main-custom-card-sizing{
+    margin: 10% 0;
+    max-width: 70%;
+}
+
+
+
+/* Dark/Light mode text */
+.text-light {
+    color: black !important;
+    opacity: 100% !important;
+    /* color:#d32f2f !important; */
+}
+.text-light:hover {
+    color: rgb(34, 34, 34) !important;
+}
+.text-dark {
+    color: #b00020 !important;
+}
+.text-dark:hover {
+    color: #ff002b !important;
+}
+
+
+
+/* Dark/Light underline */
+.custom-h5-styling {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0px 5px;
+    font-weight: 600;
+}
+
+.h5-underline-light {
+    border-bottom: 3px solid black !important;
+}
+.h5-underline-dark {
+    border-bottom: 3px solid #b00020 !important;
+}
+
+
+
+/* Dark/Light ACTIVE navigation item color change */
+.active-light {
+    border-bottom: 2px solid black !important;
+}
+.active-dark {
+    border-bottom: 2px solid #b00020 !important;
+}
+
+
+/* Dark/Light card border */
+.card-border-light {
+
+    border: 4px solid #000 !important;
+}
+.card-border-dark {
+    border: 4px solid #b00020 !important;
+}
+
+
+/* Dark/Light animated underline --- (onHoverUnderline) */
+
 .nav-hover-custom {
     position: relative;
     display: inline-block; /* Ensures width is only as much as content */
@@ -20,54 +83,12 @@
     left: 0;
 }
 
-/* Custom name tag styling */
-.custom-h5-styling {
-    display: inline-block;
-    font-size: 24px;
-    padding: 0px 7px;
-    font-weight: 600;
+.on-hover-dark::after {
+    background-color: #b00020 !important;
 }
 
-/* Custom "about me" card sizing */
-.main-custom-card-sizing{
-    margin: 10% 0;
-    max-width: 70%  !important;
-    /* width: 28rem !important; */
-}
-
-/* Dark/Light mode text */
-
-.text-light {
-    color: black !important;
-    opacity: 100% !important;
-    /* color:#d32f2f !important; */
-}
-
-.text-dark {
-    color: #b00020 !important;
-}
-
-
-
-/* Dark/Light underline */
-
-.h5-underline-light {
-    border-bottom: 2px solid #d32f2f;
-}
-
-.h5-underline-dark {
-    border-bottom: 2px solid #b00020;
-}
-
-
-/* ACTIVE navigation item color change */
-
-.active-light {
-    border-bottom: 2px solid black !important;
-}
-
-.active-dark {
-    border-bottom: 2px solid #b00020 !important;
+.on-hover-light::after {
+    background-color: #000;
 }
 
 /* Theme toggle styling */
