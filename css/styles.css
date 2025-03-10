@@ -1,25 +1,36 @@
+:root {
+    --dark-mode-red: #b00020;
+    --dark-mode-red-hover: #ff002b;
+}
+
 /* Custom "about me" card sizing */
 .main-custom-card-sizing{
-    margin: 10% 0;
     max-width: 70%;
 }
 
-
+/* Centering container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 /* Dark/Light mode text */
 .text-light {
-    color: black !important;
+    color: #000 !important;
     opacity: 100% !important;
     /* color:#d32f2f !important; */
 }
 .text-light:hover {
-    color: rgb(34, 34, 34) !important;
+    color: #000 !important;
+    /* color: rgb(34, 34, 34) !important; */
 }
 .text-dark {
-    color: #b00020 !important;
+    color: var(--dark-mode-red) !important;
 }
 .text-dark:hover {
-    color: #ff002b !important;
+    color: var(--dark-mode-red-hover) !important;
 }
 
 
@@ -33,20 +44,20 @@
 }
 
 .h5-underline-light {
-    border-bottom: 3px solid black !important;
+    border-bottom: 3px solid #000 !important;
 }
 .h5-underline-dark {
-    border-bottom: 3px solid #b00020 !important;
+    border-bottom: 3px solid var(--dark-mode-red) !important;
 }
 
 
 
 /* Dark/Light ACTIVE navigation item color change */
 .active-light {
-    border-bottom: 2px solid black !important;
+    border-bottom: 2px solid #000 !important;
 }
 .active-dark {
-    border-bottom: 2px solid #b00020 !important;
+    border-bottom: 2px solid var(--dark-mode-red) !important;
 }
 
 
@@ -56,7 +67,7 @@
     border: 4px solid #000 !important;
 }
 .card-border-dark {
-    border: 4px solid #b00020 !important;
+    border: 4px solid var(--dark-mode-red) !important;
 }
 
 
@@ -74,7 +85,7 @@
     left: 100%;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: var(--dark-mode-red);
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
@@ -84,7 +95,7 @@
 }
 
 .on-hover-dark::after {
-    background-color: #b00020 !important;
+    background-color: var(--dark-mode-red) !important;
 }
 
 .on-hover-light::after {
@@ -102,9 +113,16 @@
 #themeToggle {
     cursor: pointer;
 }
-
 /* Icon resizing */
 .icon-resize {
     font-size: 32px;
+}
+
+/* Modern look for the site */
+
+.glass-card {
+    box-shadow: 0 4px 30px var(--dark-mode-red) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
 }
 
