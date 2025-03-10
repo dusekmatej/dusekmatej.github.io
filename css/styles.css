@@ -35,33 +35,39 @@
     /* width: 28rem !important; */
 }
 
-/* Dark / Light mode styling */
+/* Dark/Light mode text */
 
-.text-danger-subtle-light {
-    color:#d32f2f !important;
+.text-light {
+    color: black !important;
+    opacity: 100% !important;
+    /* color:#d32f2f !important; */
 }
 
-.text-danger-subtle-dark {
+.text-dark {
     color: #b00020 !important;
 }
 
 
 
-.h5-underline-danger-subtle-dark {
-    border-bottom: 2px solid #b00020;
-}
+/* Dark/Light underline */
 
-.h5-underline-danger-subtle-light {
+.h5-underline-light {
     border-bottom: 2px solid #d32f2f;
 }
 
-
-.active-dark {
+.h5-underline-dark {
     border-bottom: 2px solid #b00020;
 }
+
+
+/* ACTIVE navigation item color change */
 
 .active-light {
-    border-bottom: 2px solid #d32f2f;
+    border-bottom: 2px solid black !important;
+}
+
+.active-dark {
+    border-bottom: 2px solid #b00020 !important;
 }
 
 /* Theme toggle styling */

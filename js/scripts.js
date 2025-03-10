@@ -1,51 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("themeToggle");
+
     const body = document.body;
+    const toggleButton = document.getElementById("themeToggle");
+    
+    // Theme items for change
     const textElement = document.querySelectorAll(".themeText");
     const activeUnderline = document.getElementById("themeActiveUnderline");
     const H5Underline = document.getElementById("h5-underline-theme");
 
-        toggleButton.addEventListener("click", function () {
-            if (body.getAttribute("data-bs-theme") === "dark") {
-                textElement.forEach(element => {
-                    element.classList.remove("text-danger-subtle-dark");
-                    element.classList.add("text-danger-subtle-light");
-                });
-                
-                activeUnderline.classList.remove("active-dark");
-                activeUnderline.classList.add("active-light");
-
-                H5Underline.classList.remove("h5-underline-danger-subtle-dark");
-                H5Underline.classList.add("h5-underline-danger-subtle-light");
-
-                body.setAttribute("data-bs-theme", "light");
-            } else {
-                textElement.forEach(element => {
-                    element.classList.remove("text-danger-subtle-light");
-                    element.classList.add("text-danger-subtle-dark");
-                });
-
-                activeUnderline.classList.remove("active-light");
-                activeUnderline.classList.add("active-dark");
-
-                H5Underline.classList.remove("h5-underline-danger-subtle-light");
-                H5Underline.classList.add("h5-underline-danger-subtle-dark");
-
-                body.setAttribute("data-bs-theme", "dark");
-            }
+    // Class switcher
+    function switchClass(items, oldClass, newClass) {
+        items.forEach(item => {
+            item.classList.remove(oldClass);
+            item.classList.add(newClass);
         });
-    });
+    }
 
+    function switchTheme() {
+        if (body.getAttribute("data-bs-theme") === "dark") {
+            switchClass(textElement, "text-dark", "text-light");
+            switchClass([activeUnderline], "active-dark", "active-light");
+            switchClass([H5Underline], "h5-underline-dark", "h5-underline-light");
+            // Change theme to light
+            body.setAttribute("data-bs-theme", "light")
+        } else {
+            switchClass(textElement, "text-light", "text-dark");
+            switchClass([activeUnderline], "active-light", "active-dark");
+            switchClass([H5Underline], "h5-underline-light", "h5-underline-dark");
+            // Change theme to dark
+            body.setAttribute("data-bs-theme", "dark")
+        }
+    }
 
-// toggleButton.addEventListener("click", function (){
-// if (theme === "dark")
-// {
-//     textElement.classList.remove("text-danger-subtle-light");
-//     textElemtn.classList.add("text-danger-subtle-dark");
-// }
-// else
-// {
-//     
-//     
-// }
-// });
+    toggleButton.addEventListener("click", switchTheme);
+});
