@@ -91,6 +91,12 @@
     background-color: #000;
 }
 
+
+/* Custom navbar background --- (navBarBackground)*/
+
+.nav-bg-light {
+    background-color: #fff !important;
+}
 /* Theme toggle styling */
 
 #themeToggle {
