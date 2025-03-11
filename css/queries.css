@@ -19,6 +19,6 @@
 @media (min-width: 576px) {
     .icon-transform-dark {
         position: absolute;
-        left: 10%;
+        left: 10% !important;
     }
 }
