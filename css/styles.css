@@ -1,6 +1,20 @@
 :root {
-    --dark-mode-red: #b00020;
-    --dark-mode-red-hover: #ff002b;
+    --dark-mode-color: #b00020;
+    --dark-mode-color-hover: #ff002b;
+    --dark-mode-background: rgba(255, 255, 255, 0.05);
+
+    --light-mode-color: rgb(104, 242, 255);
+    --light-mode-color-hover: rgb(56, 173, 184);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 /* Custom "about me" card sizing */
@@ -27,10 +41,10 @@
     /* color: rgb(34, 34, 34) !important; */
 }
 .text-dark {
-    color: var(--dark-mode-red) !important;
+    color: var(--dark-mode-color) !important;
 }
 .text-dark:hover {
-    color: var(--dark-mode-red-hover) !important;
+    color: var(--dark-mode-color-hover) !important;
 }
 
 
@@ -47,7 +61,7 @@
     border-bottom: 3px solid #000 !important;
 }
 .h5-underline-dark {
-    border-bottom: 3px solid var(--dark-mode-red) !important;
+    border-bottom: 3px solid var(--dark-mode-color) !important;
 }
 
 
@@ -57,7 +71,7 @@
     border-bottom: 2px solid #000 !important;
 }
 .active-dark {
-    border-bottom: 2px solid var(--dark-mode-red) !important;
+    border-bottom: 2px solid var(--dark-mode-color) !important;
 }
 
 
@@ -67,7 +81,7 @@
     border: 4px solid #000 !important;
 }
 .card-border-dark {
-    border: 4px solid var(--dark-mode-red) !important;
+    border: 4px solid var(--dark-mode-color) !important;
 }
 
 
@@ -85,7 +99,7 @@
     left: 100%;
     width: 0;
     height: 2px;
-    background-color: var(--dark-mode-red);
+    background-color: var(--dark-mode-color);
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
@@ -95,18 +109,18 @@
 }
 
 .on-hover-dark::after {
-    background-color: var(--dark-mode-red) !important;
+    background-color: var(--dark-mode-color) !important;
 }
 
 .on-hover-light::after {
-    background-color: #000;
+    background-color: black;
 }
 
 
 /* Custom navbar background --- (navBarBackground)*/
 
 .nav-bg-light {
-    background-color: #fff !important;
+    background-color: white !important;
 }
 /* Theme toggle styling */
 
@@ -120,9 +134,59 @@
 
 /* Modern look for the site */
 
-.glass-card {
-    box-shadow: 0 4px 30px var(--dark-mode-red) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
+
+/* Glass cards */
+.glass-card-dark {
+    background: var(--dark-mode-background);
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px var(--dark-mode-color);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
 }
+
+.glass-card-dark:hover {
+    box-shadow: 0 4px 25px var(--dark-mode-color-hover);
+}
+
+.glass-card-light {
+    background: #fff;
+    border-radius: 12px; 
+    box-shadow: 0 2px 20px var(--light-mode-color);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.glass-card-light:hover {
+    box-shadow: 0 4px 30px var(--light-mode-color-hover);
+}
+
+.icon-transform-y-dark {
+    position:absolute;
+    top: 20%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-transform-y-dark:hover {
+    text-shadow: 0 0 10px white, 0 0 20px white; /* Multiple shadows for more saturation */
+    transform: translateY(-5px);
+}
+
+
+.icon-transform-y-light {
+    position:absolute;
+    top: 20%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-transform-y-light:hover {
+    text-shadow: 0 0 10px black, 0 0 20px black;
+    transform: translateY(-5px);
+}
+
 

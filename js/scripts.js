@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navBarBackground = document.getElementById("customNavBarBackground")
     const activeUnderline = document.getElementById("themeActiveUnderline");
     const H5Underline = document.getElementById("customH5Underline");
+    const glassCard = document.getElementById("glassCard");
 
     // Class switcher
     function switchClass(items, oldClass, newClass) {
@@ -28,6 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
             switchClass([navBarBackground], "bg-dark-subtle", "nav-bg-light");
             switchClass([activeUnderline], "active-dark", "active-light");
             switchClass([H5Underline], "h5-underline-dark", "h5-underline-light");
+            switchClass([glassCard], "glass-card-dark", "glass-card-light");
+            switchClass([toggleButton], "icon-transform-y-dark", "icon-transform-y-light");
             // Change theme to light
             body.setAttribute("data-bs-theme", "light")
         } else {
@@ -37,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
             switchClass([navBarBackground], "nav-bg-light", "bg-dark-subtle");
             switchClass([activeUnderline], "active-light", "active-dark");
             switchClass([H5Underline], "h5-underline-light", "h5-underline-dark");
+            switchClass([glassCard], "glass-card-light", "glass-card-dark");
+            switchClass([toggleButton], "icon-transform-y-light", "icon-transform-y-dark");
             // Change theme to dark
             body.setAttribute("data-bs-theme", "dark")
         }
