@@ -22,3 +22,15 @@
         left: 10% !important;
     }
 }
+
+@media (max-width: 400px) {
+    .main-custom-card-sizing {
+        top: 15% !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .main-custom-card-sizing {
+        top: 20% !important;
+    }
+}

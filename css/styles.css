@@ -180,7 +180,7 @@
 
 .icon-transform-y-light {
     position:absolute;
-    top: 20%;
+    top: 30% !important;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -189,4 +189,10 @@
     transform: translateY(-5px);
 }
 
+.custom-blog-height {
+    height: 2.5% !important;
+}
 
+.custom-icon-height {
+    height: 100% !important;
+}
