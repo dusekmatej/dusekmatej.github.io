@@ -124,9 +124,11 @@
 }
 /* Theme toggle styling */
 
-#themeToggle {
+/* #themeToggle {
     cursor: pointer;
-}
+} */
+
+
 /* Icon resizing */
 .icon-resize {
     font-size: 32px;
@@ -166,33 +168,31 @@
     box-shadow: 0 4px 30px var(--light-mode-color-hover);
 }
 
-.icon-transform-y-dark {
+/* .icon-transform-y-dark {
     position:absolute;
     top: 20%;
     transition: transform 0.3s ease-in-out;
-}
+} */
 
-.icon-transform-y-dark:hover {
-    text-shadow: 0 0 10px white, 0 0 20px white; /* Multiple shadows for more saturation */
-    transform: translateY(-5px);
-}
-
-
-.icon-transform-y-light {
-    position:absolute;
-    top: 30% !important;
+.icon-dark {
+    text-shadow: 0 0 10px white, 0 0 20px white !important;
     transition: transform 0.3s ease-in-out;
 }
 
-.icon-transform-y-light:hover {
-    text-shadow: 0 0 10px black, 0 0 20px black;
-    transform: translateY(-5px);
+.icon-light {
+    text-shadow: 0 0 10px black, 0 0 20px black !important; /* Multiple shadows for more saturation */
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-dark:hover {
+    transform: translateY(-10px);
+}
+
+.icon-light:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px) 
 }
 
 .custom-blog-height {
     height: 2.5% !important;
-}
-
-.custom-icon-height {
-    height: 100% !important;
 }
