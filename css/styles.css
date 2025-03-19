@@ -156,7 +156,7 @@
 .glass-card-light {
     background: #fff;
     border-radius: 12px; 
-    box-shadow: 0 2px 20px var(--light-mode-color);
+    box-shadow: 0 2px 20px black;
     backdrop-filter: blur(12px) saturate(150%);
     -webkit-backdrop-filter: blur(12px) saturate(150%);
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -174,12 +174,25 @@
     transition: transform 0.3s ease-in-out;
 } */
 
+.custom-blog-height {
+    height: 2.5% !important;
+}
+
+/* Theme change icon / button */
+
+.icon-height {
+    position: absolute;
+    top: 20%;
+}
+
 .icon-dark {
+    cursor: pointer;
     text-shadow: 0 0 10px white, 0 0 20px white !important;
     transition: transform 0.3s ease-in-out;
 }
 
 .icon-light {
+    cursor: pointer;
     text-shadow: 0 0 10px black, 0 0 20px black !important; /* Multiple shadows for more saturation */
     transition: transform 0.3s ease-in-out;
 }
@@ -193,6 +206,13 @@
     transform: translateY(-10px) 
 }
 
-.custom-blog-height {
-    height: 2.5% !important;
+.blog-list-custom {
+    
+    list-style-type: none !important;
+    margin-top: 50px !important;
+    font-size: 1.2rem;
+}
+
+.blog-link-custom {
+    color: white;
 }
