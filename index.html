@@ -5,75 +5,123 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css"> -->
   <link rel="stylesheet" href="css/queries.css">
-
-  <script src="js/mainScript.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matěj Dušek</title>
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+
+    #under-construction {
+      display: none;
+      min-height: 100vh;
+      background-color: #121212;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    #under-construction h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #under-construction p {
+      font-size: 1.5rem;
+      opacity: 0.8;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
 </head>
 
 <body data-bs-theme="dark">
-  <!-- Theme toggle button -->
+  <!-- 🚧 Under Construction Section -->
+  <div id="under-construction">
+    <h1>🚧 Under Construction 🚧</h1>
+    <p>I’m working on something awesome. Check back soon!</p>
+  </div>
 
-  <header>
-    <div id="customNavBarBackground" class="container-fluid bg-dark-subtle">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-sm justify-content-center " data-bs-toggle="navbar">
-        <ul class="navbar-nav">
-          <!-- Button for responsive navigation-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
-              class="navbar-toggler-icon"></span></button>
-          <!-- Navigation items -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <li class="nav-item"><a href="index.html"
-                class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText active-dark"
-                id="themeActiveUnderline">About me</a></li>
-            <li class="nav-item "><a href="projects.html"
-                class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">Projects</a></li>
-            <li class="nav-item "><a href="#"
-                class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">Contact me</a></li>
-          </div>
-        </ul>
-      </nav>
-    </div>
+  <!-- 🧱 Actual Website Content -->
+  <div id="site-content">
 
-    <div class="d-flex justify-content-center align-items-center">
-      <i id="themeToggleButton" class="icon-dark icon-height fa-solid fa-moon icon-resize clearfix"></i>
-    </div>
-
-  </header>
-
-  <!-- Main body of the site  -->
-
-  <main>
-    <!-- About me text -->
-    <div class="d-flex justify-content-center">
-      <div class="aboutme-section">
-        <h5 class="customH5Underline custom-h5-styling h5-underline-dark">Matěj Dušek</h5>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut officiis quibusdam possimus mollitia voluptatem nulla est dolorum animi natus doloremque neque ea voluptates corporis repudiandae veritatis iure, hic ex.</p>
+    <!-- Header / Nav -->
+    <header>
+      <div id="customNavBarBackground" class="container-fluid bg-dark-subtle">
+        <nav class="navbar navbar-expand-sm justify-content-center " data-bs-toggle="navbar">
+          <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <li class="nav-item"><a href="index.html"
+                  class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText active-dark"
+                  id="themeActiveUnderline">About me</a></li>
+              <li class="nav-item"><a href="projects.html"
+                  class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">Projects</a></li>
+              <li class="nav-item"><a href="#"
+                  class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">Contact me</a></li>
+            </div>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div class="d-flex justify-content-center">
-      <div class="blog-post-section">
-      
-        <h5 class="customH5Underline custom-h5-styling h5-underline-dark">Articles</h5>
-      
-        <ul class="articles-list">
-          <li><a href="#" class="text-dark test-article-link themeText">Faking Github Commits</a></li>
-          <li><a href="#" class="text-dark test-article-link themeText">testArticle</a></li>
-          <li><a href="#" class="text-dark test-article-link themeText">testArticle</a></li>
-          <li><a href="#" class="text-dark test-article-link themeText">testArticle</a></li>
-      </ul>
 
-    </div>
-    </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <i id="themeToggleButton" class="icon-dark icon-height fa-solid fa-moon icon-resize clearfix"></i>
+      </div>
+    </header>
 
-  </main>
+    <!-- Main body -->
+    <main>
+      <div class="d-flex justify-content-center">
+        <div class="aboutme-section">
+          <h5 class="customH5Underline custom-h5-styling h5-underline-dark">Matěj Dušek</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut officiis quibusdam possimus mollitia
+            voluptatem nulla est dolorum animi natus doloremque neque ea voluptates corporis repudiandae veritatis
+            iure, hic ex.</p>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div class="blog-post-section">
+          <h5 class="customH5Underline custom-h5-styling h5-underline-dark">Articles</h5>
+          <ul class="articles-list">
+            <li><a href="#" class="text-dark test-article-link themeText">Faking Github Commits</a></li>
+            <li><a href="#" class="text-dark test-article-link themeText">testArticle</a></li>
+            <li><a href="#" class="text-dark test-article-link themeText">testArticle</a></li>
+            <li><a href="#" class="text-dark test-article-link themeText">testArticle</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toggle Script -->
+  <script>
+    const underConstruction = true; // ← SET TO false TO SHOW YOUR SITE
+
+    if (underConstruction) {
+      document.getElementById("under-construction").classList.remove("hidden");
+      document.getElementById("site-content").classList.add("hidden");
+    } else {
+      document.getElementById("under-construction").classList.add("hidden");
+      document.getElementById("site-content").classList.remove("hidden");
+    }
+  </script>
+
+  <script src="js/mainScript.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
