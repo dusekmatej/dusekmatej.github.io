@@ -1,11 +1,44 @@
 :root {
-    --dark-mode-color: #b00020;
+    --dark-mode-color: #ffffff;
     --dark-mode-color-hover: #ff002b;
-    --dark-mode-background: rgba(255, 255, 255, 0.05);
+    --dark-mode-background: rgba(255, 255, 255, 0.007);
 
     --light-mode-color: rgb(104, 242, 255);
     --light-mode-color-hover: rgb(56, 173, 184);
 }
+
+body[data-bs-theme="dark"] {
+    background-color: #111;
+}
+
+/* Under construction */
+#under-construction {
+    display: none;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+#under-construction h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#under-construction p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none !important;
+}
+
 
 * {
     margin: 0;
@@ -71,12 +104,6 @@
     padding: 0px 5px;
     font-weight: 600;
 }
-.h5-underline-light {
-    border-bottom: 3px solid #000 !important;
-}
-.h5-underline-dark {
-    border-bottom: 3px solid var(--dark-mode-color) !important;
-}
 
 
 
@@ -87,17 +114,6 @@
 .active-dark {
     border-bottom: 2px solid var(--dark-mode-color) !important;
 }
-
-
-/* Dark/Light card border */
-.card-border-light {
-
-    border: 4px solid #000 !important;
-}
-.card-border-dark {
-    border: 4px solid var(--dark-mode-color) !important;
-}
-
 
 /* Dark/Light animated underline --- (onHoverUnderline) */
 
@@ -129,14 +145,6 @@
 .on-hover-light::after {
     background-color: black;
 }
-
-
-/* Custom navbar background --- (navBarBackground)*/
-
-.nav-bg-light {
-    background-color: white !important;
-}
-/* Theme toggle styling */
 
 /* Icon resizing */
 .icon-resize {
@@ -170,43 +178,3 @@
     transition: transform 0.3s ease-in-out;
     transform: translateY(-10px) 
 }
-
-.articles-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-}
-
-.test-article-link {
-    position: relative;
-    display: inline-block;
-    text-decoration: none !important;
-    font-size: 1.2rem;
-    color: #ddd;
-    padding: 5px;
-    display: inline-block;
-    text-align: center;
-}
-
-.test-article-link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 100%;
-    width: 0;
-    height: 2px;
-    background-color: var(--dark-mode-color);
-    transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
-}
-
-.test-article-link:hover::after {
-    width: 100%;
-    right: 0;
-}
-
