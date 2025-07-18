@@ -1,4 +1,4 @@
-﻿const underConstruction = true;
+﻿const underConstruction = false;
 
 if (underConstruction) {
     document.getElementById("under-construction").classList.remove("hidden");

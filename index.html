@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-
+<html lang="en">
 <head>
-  <title>Matěj Dušek</title>
+  <title lang="cs">Matěj Dušek</title>
 
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/queries.css">
-
+  <link rel="stylesheet" href="css/notification.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-
 <body data-bs-theme="dark">
+  <div id="notification-placeholder"></div>
+
   <!-- 🚧 Under Construction Section -->
   <div id="under-construction">
     <h1>🚧 Under Construction 🚧</h1>
@@ -27,9 +27,11 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-sm justify-content-center " data-bs-toggle="navbar">
           <ul class="navbar-nav">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
               <!-- Home -->
@@ -41,14 +43,14 @@
 
               <!-- Projects -->
               <li class="nav-item">
-                <a href="#" class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">
+                <a href="#" class="underConstructionButton onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">
                   Projects
                 </a>
               </li>
 
               <!-- Articles -->
               <li class="nav-item">
-                <a href="#" class="onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText">
+                <a href="#" class="underConstructionButton onHoverUnderline nav-link text-dark opacity-75 nav-hover-custom themeText" >
                   Articles
                 </a>
               </li>
@@ -67,23 +69,26 @@
     <!-- Main body -->
     <main>
       <div class="d-flex justify-content-center">
-        <div class="aboutme-section">
+        <div id="main-text">
           <h5 class="custom-h5-styling">Matěj Dušek</h5>
-            <p>
+            <p lang="en">
               <!-- Place for a short description of myself -->
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut officiis quibusdam possimus mollitia
-              voluptatem nulla est dolorum animi natus doloremque neque ea voluptates corporis repudiandae veritatis
-              iure, hic ex.
+              Hi, my names is Matěj Dušek, I am a currently studying IT with main focus on programming. Outside of school,
+              I work on my personal projects, some of them are visible on my GitHub profile for example I've made message encryption
+              program in C#, console-based mini RPG game in C# or this website, which is made with HTML, CSS and JavaScript.
+                <br>
+              My main focus is on C# backend development, but I can work in Python, Web Technologies and I have basics of JavaScript.
+              I'm commited to learning new languages and improving my skills in programming.
             </p>
         </div>
       </div>
     </main>
   </div>
 
-  <!-- Toggle Script -->
+  <!-- Script activation -->
   <script src="js/UnderConstruction.js"></script>
-  <script src="js/mainScript.js"></script>
+  <script src="js/ThemeSwitch.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-
+  <script src="js/Notification.js"></script>
 </body>
 </html>

@@ -50,23 +50,13 @@ body[data-bs-theme="dark"] {
     border-color 0.3s ease;
 }
 
-/* Custom "about me" card sizing */
-.aboutme-section {
+#main-text {
     position: absolute;
-    top: 25%;
+    top: 30%;
     justify-content: center;
     align-items: center;
-    height: 25%;
-    max-width: 70%;
-}
-
-.blog-post-section {
-    position: absolute;
-    top: 50%;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
-    max-width: 20%;
+    max-height: 30%;
+    max-width: 50%;
 }
 
 /* Centering container */
@@ -93,8 +83,6 @@ body[data-bs-theme="dark"] {
 .text-dark:hover {
     color: var(--dark-mode-color-hover) !important;
 }
-
-
 
 /* Dark/Light underline */
 .custom-h5-styling {
