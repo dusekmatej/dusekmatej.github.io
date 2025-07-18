@@ -1,11 +1,11 @@
 @media (max-width: 767px) {
-    .aboutme-section {
+    #main-text {
         top: 30% !important;
     }
 }
 
 @media (max-width: 400px) {
-    .aboutme-section {
+    #main-text {
         top: 40% !important;
     }
     .icon-height {
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 300px) {
-    .aboutme-section {
+    #main-text {
         top: 40% !important;
     }
 
